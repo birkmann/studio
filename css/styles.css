@@ -1,0 +1,116 @@
+body {
+	margin: 0;
+	font: 16px/1.6em sans-serif;
+	color: #333;
+}
+
+.logo {
+	width: 75px;
+	height: 75px;
+	line-height: 75px;
+	background: #009fe3;
+	color: #fff;
+	font-weight: bold;
+	display: block;
+	text-align: center;
+	font-size: 3em;
+	text-decoration: none;
+}
+
+header.main {
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	margin-top: 50px;
+}
+
+header.main .container {
+	padding: 0 50px;
+	display: inline;
+	display: flex;
+}
+
+header.main nav {
+	margin-left: auto;
+}
+
+header.main nav a {
+	line-height: 75px;
+	color: #333;
+	text-decoration: none;
+	padding: 15px;
+	font-size: 1.2em;
+}
+
+header.main nav a.active {
+	border-bottom: 2px solid #009fe3;
+}
+
+.emotion {
+	height: 100vh;
+	width: 100%;
+}
+/*
+.emotion .bg.front {
+	opacity: 1;
+	height: 100vh;
+	width: 100%;
+	background-image: url(https://designful.ca/wp-content/uploads/revslider/webdesign/Ottawa-Web-Design-header.png);
+	background-position: 150% 200%;
+	background-size: 70%;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 2;
+}
+*/
+
+.emotion .bg.front {
+	opacity: 1;
+	height: 100vh;
+	width: 100%;
+	background-image: url(../img/responsive.png);
+	background-position: 180% 100%;
+	background-size: 80%;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 1;
+}
+
+.emotion .bg.back {
+	opacity: 0.6;
+	height: 100vh;
+	width: 100%;
+	background-image: url(https://images.pexels.com/photos/380768/pexels-photo-380768.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0;
+}
+
+.emotion .text {
+	position: absolute;
+	z-index: 1;
+	bottom: 100px;
+	left: 50px;
+}
+
+.emotion .text h2 {
+	font-size: 3em;
+	margin: 0 0 25px;
+}
+
+.emotion .text h3 {
+	font-size: 2em;
+	margin: 0 0 15px;
+}
+
+.emotion .text .button {
+	margin-top: 30px;
+	display: inline-block;
+	text-decoration: none;
+	padding: 10px 20px;
+	border-radius: 3px;
+	color: #fff;
+	background: #009fe3;
+}
