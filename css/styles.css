@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	font: 16px/1.6em sans-serif;
-	color: #333;
+	color: #fff;
 }
 
 .logo {
@@ -36,7 +36,7 @@ header.main nav {
 
 header.main nav a {
 	line-height: 75px;
-	color: #333;
+	color: #fff;
 	text-decoration: none;
 	padding: 15px;
 	font-size: 1.2em;
@@ -47,6 +47,7 @@ header.main nav a.active {
 }
 
 .emotion {
+	background: #111;
 	height: 100vh;
 	width: 100%;
 }
@@ -65,7 +66,7 @@ header.main nav a.active {
 */
 
 .emotion .bg.front {
-	opacity: 1;
+	opacity: 0;
 	height: 100vh;
 	width: 100%;
 	background-image: url(../img/responsive.png);
@@ -77,10 +78,10 @@ header.main nav a.active {
 }
 
 .emotion .bg.back {
-	opacity: 0.6;
+	opacity: 0.75;
 	height: 100vh;
 	width: 100%;
-	background-image: url(https://images.pexels.com/photos/380768/pexels-photo-380768.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+	background-image: url(https://images.pexels.com/photos/326514/pexels-photo-326514.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -98,11 +99,13 @@ header.main nav a.active {
 .emotion .text h2 {
 	font-size: 3em;
 	margin: 0 0 25px;
+	text-shadow: 0 2px 3px rgba(0,0,0,0.25);
 }
 
 .emotion .text h3 {
 	font-size: 2em;
 	margin: 0 0 15px;
+	text-shadow: 0 2px 3px rgba(0,0,0,0.25);
 }
 
 .emotion .text .button {
