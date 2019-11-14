@@ -1,31 +1,65 @@
 body {
 	margin: 0;
 	font: 16px/1.6em sans-serif;
-	color: #fff;
+	color: #333;
+}
+
+.img-r {
+	max-width: 100%;
+	height: auto;
+}
+
+.preload * {
+	-webkit-transition: none !important;
+	-moz-transition: none !important;
+	-ms-transition: none !important;
+	-o-transition: none !important;
 }
 
 .logo {
 	width: 75px;
 	height: 75px;
+	background: #222;
+	display: block;
+	border-radius: 100%;
+	text-decoration: none;
+	text-align: center;
+}
+
+.logo .font {
 	line-height: 75px;
-	background: #009fe3;
 	color: #fff;
 	font-weight: bold;
-	display: block;
-	text-align: center;
-	font-size: 3em;
-	text-decoration: none;
+	font-size: 2.75em;
+	letter-spacing: -5px;
+	margin-left: -5px;
+}
+
+body.scrolled .logo {
+	width: 50px;
+	height: 50px;
+	background: none;
+}
+
+body.scrolled .logo .font {
+	line-height: 50px;
 }
 
 .container {
 	padding: 0 20px;
+	margin: 0 auto;
 }
 
 header.main {
 	position: fixed;
-	z-index: 1;
+	z-index: 100;
 	width: 100%;
-	margin-top: 50px;
+	padding: 15px 0;
+	transition: background 0.25s ease-in-out;
+}
+
+body.scrolled header.main {
+	background: #000;
 }
 
 header.main nav {
@@ -34,11 +68,16 @@ header.main nav {
 }
 
 header.main nav a {
-	line-height: 60px;
+	line-height: 50px;
 	color: #fff;
 	text-decoration: none;
 	padding: 10px;
 	font-size: 1.2em;
+	transition: color 0.25s ease-in-out;
+}
+
+header.main nav a:hover {
+	color: #fff;
 }
 
 @media (min-width: 992px) {
@@ -50,50 +89,19 @@ header.main nav a {
 		margin-top: 0;
 	}
 	header.main nav a {
-		line-height: 75px;
 		padding: 15px;
 		font-size: 1.2em;
-	}
-
-	header.main nav a.active {
-		border-bottom: 2px solid #009fe3;
+		position: relative;
 	}
 }
-
 
 .emotion {
 	background: #111;
 	height: 100vh;
 	width: 100%;
 }
-/*
-.emotion .bg.front {
-	opacity: 1;
-	height: 100vh;
-	width: 100%;
-	background-image: url(https://designful.ca/wp-content/uploads/revslider/webdesign/Ottawa-Web-Design-header.png);
-	background-position: 150% 200%;
-	background-size: 70%;
-	background-repeat: no-repeat;
-	position: relative;
-	z-index: 2;
-}
-*/
 
-.emotion .bg.front {
-	display: none;
-	opacity: 0;
-	height: 100vh;
-	width: 100%;
-	background-image: url(../img/responsive.png);
-	background-position: 180% 100%;
-	background-size: 80%;
-	background-repeat: no-repeat;
-	position: relative;
-	z-index: 1;
-}
-
-.emotion .bg.back {
+.emotion .bg {
 	opacity: 0.75;
 	height: 100vh;
 	width: 100%;
@@ -110,6 +118,7 @@ header.main nav a {
 	z-index: 1;
 	bottom: 20px;
 	left: 20px;
+	color: #fff;
 }
 
 @media (min-width: 992px) {
@@ -138,8 +147,8 @@ header.main nav a {
 	text-decoration: none;
 	padding: 10px 20px;
 	border-radius: 3px;
-	color: #fff;
-	background: #009fe3;
+	color: #333;
+	background: #fff;
 }
 
 @media (min-width: 992px) {
@@ -150,4 +159,38 @@ header.main nav a {
 	.emotion .text h3 {
 		font-size: 2em;
 	}
+}
+
+main.content {
+	padding: 50px 0;
+	background: #eee;
+}
+
+main.content .container {
+	
+}
+
+@media (min-width: 992px) {
+	main.content .container {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
+	main.content .row  {
+		display: flex;
+		margin-bottom: 10px;
+	}
+	main.content .row .col-6 {
+		width: 50%;
+	}
+	main.content .row .col-6:first-child {
+		margin-right: 10px;
+	}
+	main.content .row .col-6:last-child {
+		margin-left: 10px;
+	}
+}
+
+main.content section {
+	min-height: 100vh;
+	padding: 50px 0;
 }

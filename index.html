@@ -7,19 +7,21 @@
 	<title>Birkmann Design</title>
 	<link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body class="preload" id="start">
 	<header class="main">
 		<div class="container">
 			<a href="" class="logo">
-				bd
+				<span class="font">
+					bd
+				</span>
 			</a>
 			<nav>
-				<a href="" class="active">Start</a>
-				<a href="">Arbeiten</a>
-				<a href="">Leistungen</a>
-				<a href="">Profil</a>
-				<a href="">Aktuelles</a>
-				<a href="">Kontakt</a>
+				<a href="#start" class="active">Start</a>
+				<a href="#arbeiten">Arbeiten</a>
+				<a href="#leistungen">Leistungen</a>
+				<a href="#profil">Profil</a>
+				<a href="#aktuelles">Aktuelles</a>
+				<a href="#kontakt">Kontakt</a>
 			</nav>
 		</div>
 	</header>
@@ -27,12 +29,75 @@
 		<div class="text">
 			<h2>Wir lieben präzises Design.</h2>
 			<h3>Und machen ihre Website einmalig!</h3>
-			<a href="" class="button">
+			<a href="#arbeiten" class="button">
 				Weiter zu unseren Arbeiten
 			</a>
 		</div>
-		<div class="bg front"></div>
-		<div class="bg back"></div>
+		<div class="bg"></div>
 	</div>
+	<main class="content">
+		<section id="arbeiten">
+			<div class="container">
+				<div class="row">
+					<div class="col-6">
+						<img src="img/hotel.jpg" alt="" class="img-r">
+					</div>
+					<div class="col-6">
+						<img src="img/wwf.jpg" alt="" class="img-r">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<img src="img/igm.jpg" alt="" class="img-r">
+					</div>
+					<div class="col-6">
+						<img src="img/waldhotel.jpg" alt="" class="img-r">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<img src="img/quast.jpg" alt="" class="img-r">
+					</div>
+					<div class="col-6">
+						<img src="img/hummel.jpg" alt="" class="img-r">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="leistungen">
+			<div class="container">
+				<div class="row">
+					<div class="col-6">
+						<h2>Webdesign auf höchstem Niveau und neuestem Stand der Technik.</h2>
+						<h3>Beschreibung:</h3>
+						<p>Es gibt eine Vielzahl von Programmiersprachen, Content-Management-Systemen und Webshops. Wir analysieren die für Ihren Bedarf sinnvollste Lösung. Pfeifen Sie auf Kompromisse – setzen Sie auf Experten, die den Dialekt der verschiedenen Programmiersprachen fließend beherrschen!</p>
+						<p>Gepaart mit unserem Know-how in User-Analyse, Screendesign und Web Usability (Gebrauchstauglichkeit einer Website) entsteht eine überzeugende und erfolgreiche Kommunikationsschnittstelle zwischen Ihnen und Ihrer Zielgruppe.</p>
+						<p>Zusätzlich wird Ihr Positions-Ranking durch unsere professionelle Suchmaschinenoptimierung im Web langfristig gefördert und sichert Ihnen vordere Plätze in den Suchmaschinenausgaben.</p>
+					</div>
+					<div class="col-6">
+						<h3>Im Einzelnen:</h3>
+						<p>
+							- Webdesign
+							<br>
+							– Frontend Development (HTML/CSS/JavaScript)
+							<br>
+							– CMS (u. a. Typo3, WordPress etc.)
+							<br>
+							– E-Mail-Marketing
+							<br>
+							– Microwebsites
+							<br>
+							– Onlinemarketing
+							<br>
+							– SEO/SEM
+							<br>
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
