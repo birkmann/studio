@@ -162,7 +162,7 @@ header.main nav a:hover {
 }
 
 main.content {
-	padding: 50px 0;
+	padding: 25px 0;
 	background: #eee;
 }
 
@@ -192,5 +192,22 @@ main.content .container {
 
 main.content section {
 	min-height: 100vh;
-	padding: 50px 0;
+	padding: 25px 0;
+}
+
+main.content h2.title {
+	text-transform: uppercase;
+	width: 48%;
+	font-size: 3em;
+	line-height: 1em;
+	margin: 12% 0 5%;
+}
+
+main.content h3 {
+	font-size: 2em;
+}
+
+main.content p {
+	font-size: 1.2em;
+	line-height: 1.6em;
 }

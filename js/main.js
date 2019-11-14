@@ -19,7 +19,7 @@ $('a[href^="#"]').on('click',function(e) {
 	var target = this.hash;
 	if ($(this).data('offset') != undefined) offset = $(this).data('offset');
 	$('html, body').stop().animate({
-		'scrollTop': $(target).offset().top - 125
+		'scrollTop': $(target).offset().top - 100
 	}, 500, 'swing', function() {
 		// window.location.hash = target;
 	});
