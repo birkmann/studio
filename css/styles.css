@@ -65,10 +65,19 @@ header.main {
 	z-index: 100;
 	width: 100%;
 	transition: background 0.25s ease-in-out;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
 body.scrolled header.main {
-	background: #111;
+	background: #fff;
+}
+
+body.scrolled header.main nav a,
+body.scrolled .logo .font {
+	color: #333;
+}
+body.scrolled header.main nav a:hover {
+	color: #0076ff;
 }
 
 header.main nav {
@@ -113,7 +122,6 @@ header.main nav a {
 	opacity: 0.75;
 	height: 95vh;
 	width: 100%;
-	background-image: url(https://images.pexels.com/photos/326514/pexels-photo-326514.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
 	background-image: url(https://images.pexels.com/photos/287229/pexels-photo-287229.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
 	background-image: url(https://images.pexels.com/photos/380768/pexels-photo-380768.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
 	background-image: url(https://images.pexels.com/photos/326514/pexels-photo-326514.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
