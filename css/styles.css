@@ -4,6 +4,18 @@ body {
 	color: #333;
 }
 
+@media (min-width: 1600px) {
+	body {
+		font: 17px/1.6em sans-serif;
+	}
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
 .img-r {
 	max-width: 100%;
 	height: auto;
@@ -17,9 +29,7 @@ body {
 }
 
 .logo {
-	width: 75px;
-	height: 75px;
-	background: #111;
+	background: transparent;
 	display: block;
 	text-decoration: none;
 	text-align: center;
@@ -29,9 +39,8 @@ body {
 	line-height: 75px;
 	color: #fff;
 	font-weight: bold;
-	font-size: 2.75em;
-	letter-spacing: -5px;
-	margin-left: -5px;
+	font-size: 2em;
+	letter-spacing: -2px;
 }
 
 /*
@@ -73,11 +82,7 @@ header.main nav a {
 	text-decoration: none;
 	padding: 10px;
 	font-size: 1.2em;
-	transition: color 0.25s ease-in-out;
-}
-
-header.main nav a:hover {
-	color: #80acb3;
+	transition: color 0.15s ease-in-out;
 }
 
 @media (min-width: 992px) {
@@ -89,7 +94,7 @@ header.main nav a:hover {
 		margin-top: 0;
 	}
 	header.main nav a {
-		padding: 0 15px;
+		padding: 0 20px;
 		line-height: 75px;
 		font-size: 1.2em;
 		position: relative;
@@ -99,22 +104,33 @@ header.main nav a:hover {
 
 .emotion {
 	background: #111;
-	height: 100vh;
+	height: 95vh;
 	width: 100%;
+	position: relative;
 }
 
 .emotion .bg {
 	opacity: 0.75;
-	height: 100vh;
+	height: 95vh;
 	width: 100%;
 	background-image: url(https://images.pexels.com/photos/326514/pexels-photo-326514.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-	background-image: url(https://images.pexels.com/photos/380768/pexels-photo-380768.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
 	background-image: url(https://images.pexels.com/photos/287229/pexels-photo-287229.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+	background-image: url(https://images.pexels.com/photos/380768/pexels-photo-380768.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+	background-image: url(https://images.pexels.com/photos/326514/pexels-photo-326514.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	position: fixed;
 	top: 0;
+}
+
+.emotion .bg:before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background: #000;
+	display: block;
+	opacity: 0.5;
 }
 
 .emotion .text {
@@ -152,7 +168,7 @@ header.main nav a:hover {
 	padding: 10px 20px;
 	border-radius: 3px;
 	color: #fff;
-	background: #80acb3;
+	background: #4070f4;
 }
 
 @media (min-width: 992px) {
@@ -162,6 +178,43 @@ header.main nav a:hover {
 
 	.emotion .text h3 {
 		font-size: 2em;
+	}
+}
+
+.emotion .text-center {
+	width: 70%;
+	position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    text-align: center;
+}
+
+.emotion .text-center h1 {
+	color: #fff;
+	font-size: 2em;
+	line-height: 1.4em;
+	margin: 0 auto;
+	text-transform: uppercase;
+	letter-spacing: 8px;
+}
+
+.emotion .text-center a {
+	font-size: 1.2em;
+    line-height: 1.4em;
+    text-decoration: none;
+    color: #eee;
+    font-weight: bold;
+    top: 75px;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+@media (min-width: 992px) {
+	.emotion .text-center h1 {
+		font-size: 3.5em;
 	}
 }
 
@@ -202,18 +255,13 @@ main.content section {
 }
 
 main.content h2.title {
-	text-transform: uppercase;
 	width: 48%;
-	font-size: 3em;
+	font-size: 4em;
 	line-height: 1em;
-	margin: 12% 0 5%;
+	margin: 10% 0 5%;
 }
 
 main.content h3 {
 	font-size: 2em;
-}
-
-main.content p {
-	font-size: 1.2em;
-	line-height: 1.6em;
+	color: #0076ff;
 }
